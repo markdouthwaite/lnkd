@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="lnkd",
-    version="0.1.1.post1",
+    version="0.1.2",
     description="A simple utility for linked YAML files.",
     author="Mark Douthwaite",
     author_email="mark@douthwaite.io",
