@@ -1,0 +1,13 @@
+from typing import Text
+
+import yaml
+import fire
+import lnkd
+
+
+def run(root: Text, output: Text) -> None:
+    lnkd.link(root, output)
+
+
+if __name__ == "__main__":
+    fire.Fire(run)
