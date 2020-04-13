@@ -1,0 +1,19 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: "v2.3.0"
+    files: "*.py"
+    hooks:
+    -   id: check-yaml
+    -   id: trailing-whitespace
+-   repo: https://github.com/psf/black
+    rev: "19.3b0"
+    hooks:
+    -   id: black
+-   repo: https://github.com/pre-commit/mirrors-pylint
+    rev: ''  # Use the sha / tag you want to point at
+    hooks:
+    -   id: pylint
+-   repo: https://github.com/PyCQA/bandit
+    rev: "1.6.2"
+    hooks:
+    -   id: bandit
