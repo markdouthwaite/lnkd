@@ -1,4 +1,5 @@
-<h1 align="center">LNKD - Linked YAML Documents</h1>
+<h1 align="center">LNKD</h1>
+<p align="center">Simple linked YAML documents.</p>
 
 <p align="center">
 <a href="https://github.com/markdouthwaite/lnkd/actions"><img alt="Build Status" src="https://github.com/markdouthwaite/lnkd/workflows/Build/badge.svg"></a>
