@@ -37,7 +37,6 @@ class LinkedTag(CustomTag):
 
         else:
             with open(node.value) as target:
-                print(target)
                 data = load(target, Loader=Loader)
 
         return data
