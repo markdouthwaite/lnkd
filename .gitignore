@@ -136,3 +136,5 @@ dmypy.json
 
 # Poetry files
 poetry.lock
+
+sandbox.py

@@ -8,3 +8,40 @@
 </p>
 
 A template for Python packages. It does what it says on the tin. For Python >=3.6.
+
+## Example
+
+```yaml
+# bob.yaml
+name: bob
+age: 42
+
+```
+
+```yaml
+# person.yaml
+version: '1'
+person:
+    !@ bob.yaml
+    status: available
+```
+
+```python
+import lnkd
+import yaml
+
+with open("spec.yaml") as target:
+    yaml.load(target, Loader=lnkd.LinkedLoader)
+```
+
+```yaml
+version: '1'
+person:
+    name: bob
+    age: 42
+    status: available
+```
+
+# Notes
+
+- This package implements only custom tags. It _does not_ enable shared anchors and aliases across files.
