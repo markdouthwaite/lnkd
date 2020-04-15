@@ -86,6 +86,20 @@ services:
 And that's pretty much it. You can use these components programmatically to load and
 build your YAML structures too.
 
+## Programmatic usage
+
+Want to use these capabilities directly in your Python code? No problem, you can use them like:
+
+```python
+import yaml
+import lnkd
+
+with open("service.yaml", "r") as file:
+    data = yaml.load(file, Loader=lnkd.LinkedLoader)
+```
+
+You'll get the linked data as a dictionary.
+
 # Notes
 
 - If you can, use `anchors` and `aliases` instead. If you haven't heard of these before, Atlassian have written a [short example](https://confluence.atlassian.com/bitbucket/yaml-anchors-960154027.html).
